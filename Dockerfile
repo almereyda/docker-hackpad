@@ -26,6 +26,6 @@ RUN ./hackpad/bin/build.sh
 ADD start.sh start.sh
 RUN chmod +x start.sh
 
-EXPOSE 9000
+EXPOSE 5000
 
 CMD '/home/hackpad/start.sh'
