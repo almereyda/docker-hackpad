@@ -5,11 +5,11 @@ set -e
 cd "$( dirname "${BASH_SOURCE[0]}" )"
 
 ADMIN_EMAILS=${ADMIN_EMAILS:-admin@example.com}
-DB_HOST=${DB_HOST:-mysql}
+DB_HOST=${DB_HOST:-127.0.0.1}
 DB_PORT=${DB_PORT:-3306}
 DB_NAME=${DB_NAME:-hackpad}
-DB_USERNAME=${DB_USERNAME:-hackpad}
-DB_PASSWORD=${DB_PASSWORD:-password}
+DB_USERNAME=${DB_USERNAME:-admin}
+DB_PASSWORD=${DB_PASSWORD:-85cd284d}
 TOP_DOMAINS=${TOP_DOMAINS:-localhost,localbox.info}
 
 cp hackpad/etherpad/etc/etherpad.local.properties.tmpl hackpad/etherpad/etc/etherpad.local.properties
